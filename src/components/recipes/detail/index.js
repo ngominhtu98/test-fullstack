@@ -12,7 +12,8 @@ import {
   ListItem,
   ListItemText,
   ListItemAvatar,
-  Avatar
+  Avatar,
+  Button
 } from '@material-ui/core';
 import {
   NavigateNext,
@@ -50,7 +51,7 @@ const Index = () => {
           </Breadcrumbs>
 
           <div className={styles.textTitle}>
-            <h3>ahihi</h3>
+            <h3>Content Text </h3>
           </div>
 
           <div className={styles.textContent}>
@@ -69,16 +70,16 @@ const Index = () => {
               </ListItem>
             </List>
           </div>
-
+          <hr/>
           <div>
             <List>
               <ListItem>
                 <ListItemAvatar>
                   <GroupWorkOutlined />
                 </ListItemAvatar>
-                <ListItemText primary="Photos" secondary="Jan 9, 2014" />
-                <ListItemText primary="Photos" secondary="Jan 9, 2014" />
-                <ListItemText primary="Photos" secondary="Jan 9, 2014" />
+                <Button variant="outlined" color="secondary">
+                  Primary
+                </Button>
               </ListItem>
             </List>
           </div>
